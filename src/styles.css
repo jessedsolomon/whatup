@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  background-color: #4ce0b3;
+}
+
+button {
+  background-color: #ed6a5e;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  color: #ffaf87;
+  border: none;
+  border-radius: 50%;
+  transform: translateY(0vw);
+  transition: filter 0.2s, transform 0.2s;
+}
+
+@media screen and (orientation: portrait) {
+  button {
+    width: 50vw;
+    height: 50vw;
+    font-size: 5vw;
+    filter: drop-shadow(0 2vw 0 hsl(5, 80%, 40%));
+  }
+
+  button.active {
+    transform: translateY(1.5vw);
+    filter: drop-shadow(0 0.5vw 0 hsl(5, 80%, 40%));
+  }
+}
+
+@media screen and (orientation: landscape) {
+  button {
+    width: 50vh;
+    height: 50vh;
+    font-size: 5vh;
+    filter: drop-shadow(0 2vh 0 hsl(5, 80%, 40%));
+  }
+
+  button.active {
+    transform: translateY(1.5vw);
+    filter: drop-shadow(0 0.5vh 0 hsl(5, 80%, 40%));
+  }
+}
