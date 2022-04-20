@@ -6,10 +6,12 @@ interface AppState {
 }
 
 export default class App extends React.Component<{}, AppState> {
-  audio?: HTMLAudioElement;
+  audio: HTMLAudioElement | null;
 
   constructor(props: {}) {
     super(props);
+
+    this.audio = null;
 
     this.state = {
       playing: false
