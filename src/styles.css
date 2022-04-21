@@ -50,7 +50,7 @@ button {
   }
 
   button.active {
-    transform: translateY(2vw);
+    transform: translateY(2vh);
     filter: drop-shadow(0 1vh 0 hsl(5, 80%, 40%));
   }
 }
