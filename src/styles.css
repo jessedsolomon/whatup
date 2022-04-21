@@ -32,12 +32,12 @@ button {
     width: 50vw;
     height: 50vw;
     font-size: 5vw;
-    filter: drop-shadow(0 2vw 0 hsl(5, 80%, 40%));
+    filter: drop-shadow(0 3vw 0 hsl(5, 80%, 40%));
   }
 
   button.active {
-    transform: translateY(1.5vw);
-    filter: drop-shadow(0 0.5vw 0 hsl(5, 80%, 40%));
+    transform: translateY(2vw);
+    filter: drop-shadow(0 1vw 0 hsl(5, 80%, 40%));
   }
 }
 
@@ -46,11 +46,11 @@ button {
     width: 50vh;
     height: 50vh;
     font-size: 5vh;
-    filter: drop-shadow(0 2vh 0 hsl(5, 80%, 40%));
+    filter: drop-shadow(0 3vh 0 hsl(5, 80%, 40%));
   }
 
   button.active {
-    transform: translateY(1.5vw);
-    filter: drop-shadow(0 0.5vh 0 hsl(5, 80%, 40%));
+    transform: translateY(2vw);
+    filter: drop-shadow(0 1vh 0 hsl(5, 80%, 40%));
   }
 }

@@ -19,7 +19,7 @@ export default class App extends React.Component<{}, AppState> {
   }
 
   play() {
-    if (this.audio) {
+    if (this.audio && !this.state.playing) {
       this.setState({ playing: true });
 
       this.audio.play();
@@ -33,7 +33,7 @@ export default class App extends React.Component<{}, AppState> {
       <div className="App">
         <audio
           ref={(audio) => (audio ? (this.audio = audio) : null)}
-          src="/t-rex-roar.mp3"
+          src="/whatup-son.wav"
         ></audio>
         <button
           className={this.state.playing ? "active" : ""}
